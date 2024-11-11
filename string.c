@@ -9,13 +9,15 @@ int main() {
     int arrayLaenge = sizeof(land) / sizeof(land[0]);
 
     // Ausgabe der Länge des Arrays
-    printf("Die Laenge des Arrays (inkl. \\0): %d\n", arrayLaenge);
+    printf("Die Länge des Arrays (inkl. \\0): %d\n\n", arrayLaenge);
 
-    // Ausgabe des Nullterminators
-    if (land[arrayLaenge - 1] == '\0') {
-        printf("Der letzte Wert im Array ist der Nullterminator: '\\0'\n");
-    } else {
-        printf("Der letzte Wert im Array ist nicht '\\0'\n");
+    // Ausgabe der einzelnen Zeichen im Array
+    for (int i = 0; i < arrayLaenge; i++) {
+        if (land[i] == '\0') {
+            printf("Position %d: '\\0' (Nullterminator)\n", i);
+        } else {
+            printf("Position %d: '%c'\n", i, land[i]);
+        }
     }
 
     return 0;
