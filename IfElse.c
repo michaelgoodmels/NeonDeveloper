@@ -32,8 +32,8 @@ int main(void) {
 
     //Endlosschleife
     while(1){
-    IfElse();
-    }
+     IfElse();
+        }
     return 0;
 }
 
