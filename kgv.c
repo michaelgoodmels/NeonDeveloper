@@ -8,19 +8,6 @@ Kontakt:    michael.good@outlook.com
 
 #include <stdio.h>
 
-// Funktion, um den GGT mithilfe des euklidischen Algorithmus zu finden
-
-int findeGGT(int a, int b) {
-    while (b != 0) {
-        int temp = b;
-        b = a % b;
-        a = temp;
-        int s = 0;
-        int findeGGT = 0;
-    }
-    return a;
-}
-
 // Funktion, um das KGV von zwei Zahlen zu finden
 int findeKGV(int a, int b) {
     // Verhindere Division durch Null
