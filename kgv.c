@@ -1,12 +1,15 @@
-/*
-Projekt:    kgv
-Autor:      Michael Good
-Datum:      05.09.2024
-Version:    0.1
-Kontakt:    michael.good@outlook.com
-*/
-
 #include <stdio.h>
+
+// Funktion, um den GGT von zwei Zahlen zu finden
+int findeGGT(int a, int b) {
+    // Euklidischer Algorithmus zur Berechnung des GGT
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
 
 // Funktion, um das KGV von zwei Zahlen zu finden
 int findeKGV(int a, int b) {
